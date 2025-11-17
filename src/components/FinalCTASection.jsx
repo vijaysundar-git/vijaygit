@@ -11,14 +11,17 @@ const FinalCTASection = () => {
 
   return (
         <section className="py-24 bg-gradient-to-r from-blue-500 to-blue-600 text-white relative overflow-hidden">
-      <div className="container-custom">
+      {/* Overlay for better text contrast */}
+      <div className="absolute inset-0 bg-black/10"></div>
+      
+      <div className="container-custom relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <motion.h2
             initial={{opacity: 0, y: 30}}
             whileInView={{opacity: 1, y: 0}}
             viewport={{once: true}}
             transition={{duration: 0.8}}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
             Ready to transform your business?
           </motion.h2>
@@ -28,10 +31,10 @@ const FinalCTASection = () => {
             whileInView={{opacity: 1, y: 0}}
             viewport={{once: true}}
             transition={{duration: 0.8, delay: 0.2}}
-            className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto"
           >
             Join UK businesses that have already transformed their operations with{' '}
-            <span className="text-blue-600 font-semibold">SJR Tech Services Limited</span>. 
+            <span className="text-yellow-300 font-semibold">SJR Tech Services Limited</span>. 
             Start saving time and reducing costs today.
           </motion.p>
 
@@ -44,7 +47,7 @@ const FinalCTASection = () => {
           >
             <button
               onClick={handleBookCall}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300 shadow-lg hover:shadow-xl"
+              className="bg-white hover:bg-gray-100 text-blue-600 hover:text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Get Started Today
             </button>
@@ -55,7 +58,7 @@ const FinalCTASection = () => {
             whileInView={{opacity: 1}}
             viewport={{once: true}}
             transition={{duration: 0.8, delay: 0.6}}
-            className="mt-12 flex flex-wrap justify-center items-center gap-8 text-gray-300"
+            className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/90"
           >
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
