@@ -4,7 +4,14 @@ import Logo from './Logo'
 const Header = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
-    element?.scrollIntoView({behavior: 'smooth'})
+    if (element) {
+      const headerHeight = 100; // Account for fixed header
+      const elementPosition = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
   }
 
   return (
@@ -14,11 +21,11 @@ const Header = () => {
       transition={{duration: 0.6}}
       className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg"
     >
-      <nav className="container-custom py-4">
+      <nav className="container-custom py-6">
         <div className="flex items-center justify-between">
           {/* Logo Only - Left Aligned */}
           <div className="flex items-center">
-            <Logo size="xl" />
+            <Logo size="lg" />
           </div>
           
           {/* Navigation Links */}

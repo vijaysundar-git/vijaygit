@@ -10,7 +10,7 @@ const FinalCTASection = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-50" id="final-cta">
+        <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white relative overflow-hidden">
       <div className="container-custom">
         <div className="text-center max-w-4xl mx-auto">
           <motion.h2

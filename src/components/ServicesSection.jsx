@@ -68,7 +68,7 @@ const ServicesSection = () => {
   }
 
   return (
-    <section className="py-20 bg-white" id="services">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50" id="services">
       <div className="container-custom">
         <motion.div
           initial={{opacity: 0, y: 30}}

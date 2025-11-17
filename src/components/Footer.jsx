@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12" id="contact">
+        <footer className="bg-gray-900 text-white py-16">
       <div className="container-custom">
         <div className="grid md:grid-cols-3 gap-8">
           <motion.div

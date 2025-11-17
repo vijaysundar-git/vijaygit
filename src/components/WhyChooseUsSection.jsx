@@ -64,7 +64,7 @@ const WhyChooseUsSection = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-50" id="why-choose-us">
+    <section className="py-24 bg-white" id="why-choose-us">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div

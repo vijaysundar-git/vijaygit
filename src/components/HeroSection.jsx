@@ -12,20 +12,22 @@ const HeroSection = () => {
   const handleExploreServices = () => {
     const servicesSection = document.getElementById('services')
     if (servicesSection) {
-      servicesSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
+      const headerHeight = 100; // Account for fixed header
+      const elementPosition = servicesSection.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
   }
 
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden bg-white pt-24 pb-12 px-4">
+    <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-gray-50 pt-28 pb-12 px-4">
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-gray-50"></div>
       <div className="absolute inset-0" style={{
-        backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
-                          radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.05) 0%, transparent 50%)`
+        backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+                          radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.08) 0%, transparent 50%)`
       }}></div>
       
       {/* Content */}

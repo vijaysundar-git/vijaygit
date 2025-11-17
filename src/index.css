@@ -29,7 +29,7 @@
   }
   
   .section-padding {
-    @apply py-20 md:py-28;
+    @apply py-24 md:py-32;
   }
   
   .container-custom {
@@ -37,7 +37,20 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary-600 via-accent-600 to-primary-900;
+    @apply bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-900;
+  }
+  
+  /* Professional section backgrounds */
+  .section-light {
+    @apply bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50;
+  }
+  
+  .section-white {
+    @apply bg-white;
+  }
+  
+  .section-blue {
+    @apply bg-gradient-to-br from-blue-600 to-indigo-700;
   }
 }
 

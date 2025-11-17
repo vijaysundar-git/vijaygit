@@ -76,7 +76,7 @@ const WorkflowSection = () => {
   }
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-50 to-gray-100" id="how-it-works">
+    <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50" id="how-it-works">
       <div className="container-custom">
         <motion.div
           initial={{opacity: 0, y: 30}}
