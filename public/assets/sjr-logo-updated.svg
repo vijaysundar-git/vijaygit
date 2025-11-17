@@ -1,0 +1,13 @@
+<svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer black border -->
+  <ellipse cx="100" cy="60" rx="95" ry="55" fill="none" stroke="#000000" stroke-width="4"/>
+  
+  <!-- Inner beige/cream background -->
+  <ellipse cx="100" cy="60" rx="85" ry="45" fill="#F5F5DC"/>
+  
+  <!-- Inner black border -->
+  <ellipse cx="100" cy="60" rx="85" ry="45" fill="none" stroke="#000000" stroke-width="2"/>
+  
+  <!-- SJR text -->
+  <text x="100" y="72" text-anchor="middle" font-family="Times New Roman, serif" font-size="32" font-weight="bold" fill="#000000" font-style="italic">SJR</text>
+</svg>

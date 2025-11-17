@@ -18,7 +18,7 @@ const Logo = ({size = "md", showText = true, className = ""}) => {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img 
-        src="/assets/sjr-logo-new.svg" 
+        src="/assets/sjr-logo-updated.svg" 
         alt="SJR Tech Services Limited Logo" 
         className={`${sizeClasses[size]} w-auto flex-shrink-0`}
       />
