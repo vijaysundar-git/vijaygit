@@ -22,12 +22,12 @@ const HeroSection = () => {
   }
 
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-gray-50 pt-28 pb-12 px-4">
+    <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-25 via-white to-gray-25 pt-28 pb-12 px-4">
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-gray-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-25 via-white to-gray-25"></div>
       <div className="absolute inset-0" style={{
-        backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-                          radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.08) 0%, transparent 50%)`
+        backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.04) 0%, transparent 50%),
+                          radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.04) 0%, transparent 50%)`
       }}></div>
       
       {/* Content */}

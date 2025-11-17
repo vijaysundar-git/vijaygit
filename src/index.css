@@ -42,7 +42,7 @@
   
   /* Professional section backgrounds */
   .section-light {
-    @apply bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50;
+    @apply bg-gradient-to-br from-blue-25 via-gray-50 to-blue-50;
   }
   
   .section-white {
@@ -50,7 +50,16 @@
   }
   
   .section-blue {
-    @apply bg-gradient-to-br from-blue-600 to-indigo-700;
+    @apply bg-gradient-to-br from-blue-500 to-blue-600;
+  }
+  
+  /* Custom light colors for better text visibility */
+  .bg-blue-25 {
+    background-color: #fafbff;
+  }
+  
+  .bg-gray-25 {
+    background-color: #fafafa;
   }
 }
 
