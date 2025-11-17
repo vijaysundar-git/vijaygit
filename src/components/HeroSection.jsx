@@ -20,7 +20,7 @@ const HeroSection = () => {
   }
 
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden bg-white pt-20">
+    <section className="min-h-screen flex items-center relative overflow-hidden bg-white pt-24 pb-12 px-4">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
       <div className="absolute inset-0" style={{
@@ -30,12 +30,12 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="container-custom relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center px-4">
           <motion.h1
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.8, delay: 0.2, ease: "easeOut"}}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-8 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
           >
             Transform your business with{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-500">
@@ -47,7 +47,7 @@ const HeroSection = () => {
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.8, delay: 0.4, ease: "easeOut"}}
-            className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed"
           >
             Streamline operations, eliminate repetitive tasks, and reduce errors with AI & Automation solutions tailored for UK businesses.
           </motion.p>
